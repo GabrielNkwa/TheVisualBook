@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/regCodeEdittxtHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Recipient Email Address or Phone Number" />
+
+
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_style1"
+        android:layout_below="@+id/regCodeEdittxtHint"
+        android:layout_centerHorizontal="true"
+        android:hint="Email or Phone Nummber"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/juststore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"/>
+
+
+        <Button
+            android:id="@+id/affirmbttn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style1"
+            android:layout_below="@+id/emailInput"
+            android:layout_centerHorizontal="true"
+            android:text="Send Email Invite"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/negativebttn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style1"
+            android:layout_below="@+id/affirmbttn"
+            android:layout_centerHorizontal="true"
+            android:text="Send SMS Invite"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+
+
+
+</RelativeLayout>

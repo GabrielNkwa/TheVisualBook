@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GiftingActivity1">
+
+    <TextView
+        android:id="@+id/greeting_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="verdana"
+        android:textSize="30sp"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp" />
+
+    <TextView
+        android:id="@+id/action_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greeting_user"
+        android:fontFamily="verdana"
+        android:textSize="18sp"
+        android:text="Let's prepare a Visual Book"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp" />
+
+    <TextView
+        android:id="@+id/intro_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_introduction"
+        android:fontFamily="verdana"
+        android:textSize="18sp"
+        android:text="Who is the Visual Book for?"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp" />
+
+
+    <Button
+        android:id="@+id/bookAnswer_1"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_below="@+id/intro_question"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:text="It's for Me"
+        android:layout_marginTop="40px" />
+
+    <Button
+        android:id="@+id/bookAnswer_2"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_below="@+id/bookAnswer_1"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:text="It's for Someone Else"
+        />
+
+</RelativeLayout>

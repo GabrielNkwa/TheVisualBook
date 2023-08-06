@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookLIstActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/usersGTitle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15sp"
+        android:src="@mipmap/ic_launcher_logovisual_book_foreground"/>
+
+    <ScrollView
+        android:id="@+id/scrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usersGTitle"
+        android:layout_above="@+id/addBookAction"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookListVw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textVw"
+            android:layout_marginTop="20dp"
+            android:layout_above="@+id/addBookAction" />
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/addBookAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Add Book"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>

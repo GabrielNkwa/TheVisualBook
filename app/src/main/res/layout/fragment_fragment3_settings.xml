@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment3_settings"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_style_four"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/namePersonLAbel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="Name:"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/namePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout02"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_style_four"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/emailPersonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Email:"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/emailPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/changeLanguage"
+        android:layout_width="275dp"
+        android:layout_height="120px"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_style_four"
+        android:text="Change Language"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/changePassword"
+        android:layout_width="281dp"
+        android:layout_height="120px"
+        android:layout_below="@+id/changeLanguage"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_style_four"
+        android:text="Change Password"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/upairDeviceWipe"
+        android:layout_width="275dp"
+        android:layout_height="120px"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_style_four"
+        android:text="Wipe and Unpair Device"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/changeLanguage"
+        android:text="Sign Out"
+        android:layout_marginTop="235dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="80dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/instaBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Instagram"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_instagram_foreground"/>
+
+        <ImageView
+            android:id="@+id/tiktikBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="TikTok"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_tiktok_foreground"/>
+
+
+        <ImageView
+            android:id="@+id/twttrBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Twitter"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_pinterest_foreground"/>
+
+
+        <ImageView
+            android:id="@+id/youTBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="YouTube"
+            android:layout_margin="0dp"
+            android:textSize="10sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_youtube_foreground"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

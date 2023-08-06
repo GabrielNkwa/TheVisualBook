@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity2"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/greeting_user"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15sp"
+        android:src="@mipmap/ic_launcher_logo_frtheen_foreground"/>
+
+    <TextView
+        android:id="@+id/action_introduction23"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/greeting_user"
+        android:fontFamily="verdana"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_marginTop="120sp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/action_introduction23"
+        android:background="@drawable/edittext_style1"
+        android:hint="Password"
+        android:password="true"
+        android:padding="15dp"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/bookAnswer_3"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/input1"
+        android:background="@drawable/button_style_main"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="100px"
+        android:text="Sign In"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/forgetPsWrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bookAnswer_3"
+        android:fontFamily="arial"
+        android:textColor="@color/colorAccent"
+        android:text="Forgot Password? - Click Here"
+        android:layout_marginTop="80px" />
+
+</RelativeLayout>

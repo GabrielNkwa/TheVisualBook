@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiftingActivity3">
+
+
+    <TextView
+        android:id="@+id/action_introduction"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:textSize="25sp"
+        android:text="Gifting a Visual Book?"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15sp"/>
+
+    <TextView
+        android:id="@+id/intro_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_introduction"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="arial"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:text="Easily generate a special virtual code from anywhere in the world and gift it to your loved ones. "
+        android:layout_marginTop="35sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15sp" />
+
+    <TextView
+        android:id="@+id/intro_question2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_introduction"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="arial"
+        android:textSize="15sp"
+        android:text="If you have the box and would love to gift in person, choose the QR code option located on the packaging."
+        android:layout_marginTop="85sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="15sp" />
+
+    <LinearLayout
+        android:id="@+id/bookResponse_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/intro_question"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAllCaps="false"
+        android:fontFamily="arial"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:paddingTop="4dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:text="Generate a virtual code"
+            android:drawablePadding="10dp"
+            android:background="@drawable/button_style_main"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bookResponse_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bookResponse_2"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:fontFamily="arial"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textColor="@color/colorAccent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="20"
+            android:textStyle="bold"
+            android:text="Setup Using QR Code"
+            android:background="@drawable/button_style_main"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

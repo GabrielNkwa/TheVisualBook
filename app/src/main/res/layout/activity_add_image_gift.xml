@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddImageGiftActivity">
+
+    <TextView
+        android:id="@+id/text_tag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="arial"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="Choose an image to attach as part of the gift"
+        android:layout_marginRight="25sp"
+        android:layout_marginLeft="25sp"/>
+
+    <ImageView
+        android:id="@+id/imageViewTag"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/text_tag1"
+        android:layout_above="@+id/chooseImageBttn"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:id="@+id/chooseImageBttn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Choose"
+        android:background="@drawable/button_style1"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/uploadImageBttn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Save"
+        android:background="@drawable/button_style_four"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

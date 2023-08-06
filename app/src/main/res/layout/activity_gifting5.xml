@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiftingActivity5">
+
+    <TextView
+        android:id="@+id/intro_question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="Who are you preparing the Visual Book for?"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"/>
+
+    <TextView
+        android:id="@+id/intro_question_eplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro_question1"
+        android:fontFamily="arial"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="gravity"
+        android:text="Set the receipient's name or add a title. They can rename the book later"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"/>
+
+
+    <EditText
+        android:id="@+id/intro_Sendname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/intro_question_eplain"
+        android:background="@drawable/edittext_style1"
+        android:paddingLeft="20dp"
+        android:hint="The person's name"
+        android:textColor="#d7d7d7"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/bookResponse_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_style_four"
+        android:layout_margin="20dp"
+        android:fontFamily="arial"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thevisualbook">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="The Visual Book"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".DshMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRBookNamingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoFullScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ButtomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuickHelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookLIstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhotoEditorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClaimedVideosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClaimedImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddImageGiftActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Family_Friends_InviteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiftPictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BluetoothBookConnectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LinkShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiftMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SigninActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".GiftingActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GiftingActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity android:name=".BaseHomeActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+    </application>
+
+</manifest>

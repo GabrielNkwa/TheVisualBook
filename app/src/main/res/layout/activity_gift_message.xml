@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiftMessageActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/intro_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="arial"
+        android:textSize="25sp"
+        android:text="Send a personal message with the gift"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+
+    <TextView
+        android:id="@+id/introMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro_question"
+        android:fontFamily="arial"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:text="The message will be delivered to the recipient when the Visual Book is connected at its final destination."
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_below="@+id/introMessage"
+        android:hint="Please type in your message here..."
+        android:ems="10"
+        android:padding="12px"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_style1"/>
+
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:background="@drawable/button_style_four"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false" />
+
+
+
+</RelativeLayout>

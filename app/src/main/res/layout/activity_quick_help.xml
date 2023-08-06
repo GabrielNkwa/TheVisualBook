@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuickHelpActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="arial"
+        android:textColor="@color/colorAccent"
+        android:text="FAQ"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/youtubeLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="arial"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:text="Our social media pages"
+        android:textAlignment="center"
+        android:layout_above="@+id/socialIntegr"
+        android:layout_marginBottom="3dp" />
+
+    <LinearLayout
+        android:id="@+id/socialIntegr"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/supportEmailTAG">
+
+        <ImageView
+            android:id="@+id/instaBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Instagram"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher_instagram_foreground"/>
+
+        <ImageView
+            android:id="@+id/twttrBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Twitter"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher_logo_pinterest_foreground"/>
+
+        <ImageView
+            android:id="@+id/tiktikBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="TikTok"
+            android:textSize="10sp"
+            android:layout_margin="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher_tiktok_foreground"/>
+
+        <ImageView
+            android:id="@+id/youTBttn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="YouTub"
+            android:layout_margin="0dp"
+            android:textSize="10sp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/ic_launcher_youtube_foreground"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/supportEmailTAG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/supportEmailLView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="arial"
+        android:textColor="@color/colorAccent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="Our Support Email"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/supportEmailLView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_launcher_email_foreground"/>
+
+        <TextView
+            android:id="@+id/supportEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:layout_alignParentBottom="true"
+            android:text="support@thevisualbook.com"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/greeting_user"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15sp"
+        android:src="@mipmap/ic_launcher_logovisual_book_foreground"/>
+
+
+    <TextView
+        android:id="@+id/action_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greeting_user"
+        android:fontFamily="arial"
+        android:textSize="18sp"
+        android:text="Welcome"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp" />
+
+    <TextView
+        android:id="@+id/action_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="45sp"
+        android:layout_marginBottom="25sp"
+        android:fontFamily="arial"
+        android:text="Time to create interactive and immersive ways to capture and preserve memories"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/action_introduction23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_introduction"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="arial"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:text=""
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="15sp" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/action_introduction23"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="1px"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15px"
+        android:background="@drawable/edittext_style1"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email Address"
+        android:padding="15dp" />
+
+
+    <Button
+        android:id="@+id/bookAnswer_2"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/input1"
+        android:background="@drawable/button_style_main"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Sign In"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/bookAnswer_3"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/bookAnswer_2"
+        android:background="@drawable/button_style_main"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Create Account"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

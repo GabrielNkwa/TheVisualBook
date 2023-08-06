@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llay01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bttnChseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Image"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style1" />
+
+        <Button
+            android:id="@+id/bttnChseVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Video"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style1" />
+    </LinearLayout>
+
+</RelativeLayout>

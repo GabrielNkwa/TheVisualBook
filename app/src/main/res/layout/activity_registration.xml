@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/greeting_user"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15sp"
+        android:src="@mipmap/ic_launcher_logovisual_book_foreground"/>
+
+
+    <TextView
+        android:id="@+id/input1"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_below="@+id/greeting_user"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px" />
+
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input1"
+        android:hint="Name"
+        android:background="@drawable/edittext_style1"
+        android:paddingLeft="20px"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input2"
+        android:hint="Password"
+        android:password="true"
+        android:background="@drawable/edittext_style1"
+        android:paddingLeft="20px"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/input3"
+        android:hint="Confirm Password"
+        android:password="true"
+        android:background="@drawable/edittext_style1"
+        android:paddingLeft="20px"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"/>
+
+
+    <Button
+        android:id="@+id/bookAnswer_2"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/input4"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/button_style_main"
+        android:text="Create Account"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/input00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookAnswer_2"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account?"
+        android:layout_marginTop="80px" />
+
+
+    <TextView
+        android:id="@+id/input01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input00"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:layout_marginTop="20px"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

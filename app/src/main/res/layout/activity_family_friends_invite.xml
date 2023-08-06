@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Family_Friends_InviteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Send an invite to someone to join in experiencing the good time"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/recipient_ccontact"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edittext_style1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="25px"
+        android:layout_margin="30px"
+        android:hint="Recipient Contact"/>
+
+    <Button
+        android:id="@+id/inviteEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/inviteSMS"
+        android:layout_margin="20dp"
+        android:text="Email Invite"
+        android:background="@drawable/button_style1" />
+
+    <Button
+        android:id="@+id/inviteSMS"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="SMS Invite"
+        android:background="@drawable/button_style1" />
+
+</RelativeLayout>
